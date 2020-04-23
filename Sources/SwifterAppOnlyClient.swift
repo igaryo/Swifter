@@ -59,6 +59,7 @@ internal class AppOnlyClient: SwifterClientProtocol, SwifterAppProtocol {
         }
         
         request.start()
+        print(request.url)
         return request
     }
     

@@ -343,7 +343,7 @@ public extension Swifter {
         parameters["related"] ??= related
         parameters["lang"] ??= lang
 
-        self.postJSON(path: path, baseURL: .publish, parameters: parameters, success: { json, _ in
+        self.getJSON(path: path, baseURL: .publish, parameters: parameters, success: { json, _ in
 			success?(json)
 		}, failure: failure)
     }
